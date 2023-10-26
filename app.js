@@ -10,8 +10,6 @@ const connection = mysql.createConnection({
     database: 'cardapio'
   });
 
-var FormData = require('form-data');
-
 app.get('/', (req, res) => {
   res.send('Alô mundo novo!')
 })
