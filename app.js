@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3001
 const mysql = require('mysql2');
+var cors = require('cors')
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -9,6 +10,8 @@ const connection = mysql.createConnection({
     password : "root",
     database: 'cardapio'
   });
+
+app.use(cors())
 
 app.get('/', (req, res) => {
   res.send('Alô mundo novo!')

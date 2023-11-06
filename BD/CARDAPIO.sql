@@ -27,8 +27,9 @@ DROP TABLE IF EXISTS `categoria`;
 CREATE TABLE `categoria` (
   `id_categoria` int(11) NOT NULL AUTO_INCREMENT,
   `titulo` varchar(45) NOT NULL,
+  `cor` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_categoria`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +38,7 @@ CREATE TABLE `categoria` (
 
 LOCK TABLES `categoria` WRITE;
 /*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
-INSERT INTO `categoria` VALUES (1,'Italiano'),(2,'Rápido e Fácil'),(3,'Hamburgers'),(4,'Alemã'),(5,'Leve & Saudável'),(6,'Exótica'),(7,'Café da Manhã'),(8,'Asiática'),(9,'Francesa'),(10,'Verão'),(11,'Chinesa nova'),(13,'Comida Boa'),(14,'Comida Boa'),(15,'Comida Boa'),(16,'Comida Boa'),(17,'Comida Boa');
+INSERT INTO `categoria` VALUES (1,'Italiano','ff0000'),(2,'Rápido e Fácil','8c0e48'),(3,'Hamburgers','80ab99'),(4,'Alemã','e8dbad'),(5,'Leve & Saudável','c432d9'),(6,'Exótica','1b1967'),(7,'Café da Manhã','9acb72'),(8,'Asiática','c666b2'),(9,'Francesa','e5fa5e'),(10,'Verão','82be87'),(11,'Chinesa nova','bb2803'),(13,'Comida Boa','d978c4'),(14,'Comida Boa','ffdcd8'),(15,'Comida Boa','f4436f'),(16,'Comida Boa','ff8207'),(17,'Comida Boa','c8cd3b'),(18,'Nova comida','ff00ff');
 /*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -108,4 +109,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-26 10:09:50
+-- Dump completed on 2023-11-06  9:05:58
